@@ -1,12 +1,12 @@
 import React from "react";
 
-function TodoItem(props){
+function TodoItem(props) {
     const delItem = (event) => {
         event.target.parentNode.remove()
     }
-    return(
+    return (
         <div className="todo-item">
-            {props.itemi}
+            {props.item}
             <button onClick={delItem}>삭제</button>
         </div>
     )
